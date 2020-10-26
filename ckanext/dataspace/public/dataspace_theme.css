@@ -106,6 +106,22 @@ body {
 .site-footer a {
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-info-area h5 {
+    color: #F7734F;
+    font-weight: 600;
+    margin: 20 0 10px 0;
+    font-size: 1em;
+}
+.footer-info-area > ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+.footer-info-area a {
+    color: #fff;
+    font-weight: 200;
+}
 
 
 
@@ -128,3 +144,5 @@ body {
 a {
     color: #2B1466;
 }
+
+

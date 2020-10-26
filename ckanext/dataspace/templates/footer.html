@@ -1,0 +1,59 @@
+<footer class="site-footer">
+    <div class="container">
+      {% block footer_content %}
+      <div class="row">
+        <div class="col-md-2 footer-links">
+            <img width="100%" src="/dataspace_logo_white.svg" alt="{{ g.site_title }}" title="{{ g.site_title }}" />
+        </div>
+        <div class="col-md-3 footer-links">
+            <div class="footer-info-area">
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="https://standards.dataspace.mobi">Know more about data standards</a></li>
+                    <li><a href="https://standards.dataspace.mobi/learn/new-standards">Learn to create new data standards</a></li>
+                </ul>
+            </div>
+            <div class="footer-info-area">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="https://github.com/DataSpace-Mobility">Github</a></li>
+                    <li><a href="https://dataspace.mobi/#/blog">Our Blog</a></li>
+                    <li><a href="https://discuss.dataspace.mobi">Discussion Forum</a></li>
+                    <li><a href="https://dataspace.mobi/request-new-datasets">Request more datasets</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 footer-links">
+            <div class="footer-info-area">
+                <h5>Develop</h5>
+                <ul>
+                    {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
+                    <li><a href="{{ api_url }}">APIs</a></li>
+                </ul>
+            </div>
+            <div class="footer-info-area">
+                <h5>Collaborate</h5>
+                <ul>
+                    <li><a href="https://dataspace.mobi">Share mobility data with us</a></li>
+                    <li><a href="https://challenge.dataspace.mobi">Participate in data challenges</a></li>
+                    <li><a href="https://standards.dataspace.mobi/new">Build data standards</a></li>
+                    <li><a href="https://blog.dataspace.mobi">Write for us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 footer-links">
+            <div class="footer-info-area">
+                <h5>Explore DataSpace</h5>
+                <ul>
+                    <li><a href="https://dataspace.mobi">Data Platform</a></li>
+                    <li><a href="https://standarads.dataspace.mobi">Data Standards</a></li>
+                    <li><a href="https://licenses.dataspace.mobi">Data Licenses</a></li>
+                    <li><a href="https://dataspace.mobi/#/use-cases">Explore Use Cases</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      {% endblock %}
+    </div>
+  </footer>
+  
