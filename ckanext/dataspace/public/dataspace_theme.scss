@@ -1,0 +1,395 @@
+$primary-color: #2E1165;
+$primary-light-color: #42278E;
+$primary-second-shade-color: #2F176C;
+$secondary-color: #F89E2C;
+$tertiary-color: #F7734F;
+$dark-grey-color: #1C1C1C;
+$light-grey-color: #5C5C5C;
+$white-color: #FFFFFF;
+
+
+/* =====================================================
+   The "account masthead" bar across the top of the site
+   ===================================================== */
+
+   .account-masthead {
+    background-color: #2B1466;
+}
+/* The "bubble" containing the number of new notifications. */
+.account-masthead .account .notifications a span {
+    background-color: black;
+}
+/* The text and icons in the user account info. */
+.account-masthead .account ul li a {
+    color: rgba(255, 255, 255, 0.6);
+}
+/* The user account info text and icons, when the user's pointer is hovering
+   over them. */
+.account-masthead .account ul li a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: black;
+}
+
+
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+
+.masthead {
+    background-color: #42278E;
+}
+/* The "navigation pills" in the masthead (the links to Datasets,
+   Organizations, etc) when the user's pointer hovers over them. */
+.masthead .navigation .nav-pills li a:hover {
+    background-color: #2B1466;
+    color: white;
+}
+/* The "active" navigation pill (for example, when you're on the /dataset page
+   the "Datasets" link is active). */
+.masthead .navigation .nav-pills li.active a {
+    background-color: #2B1466;
+}
+/* The "box shadow" effect that appears around the search box when it
+   has the keyboard cursor's focus. */
+.masthead input[type="text"]:focus {
+    -webkit-box-shadow: inset 0px 0px 2px 0px #2B1466;
+    box-shadow: inset 0px 0px 2px 0px #2B1466;
+}
+
+.masthead .logo img {
+    height: 300px;
+}
+
+
+/* ===========================================
+   The content in the middle of the front page
+   =========================================== */
+
+/* Remove the "box shadow" effect around various boxes on the page. */
+.box {
+    box-shadow: none;
+}
+/* Remove the borders around the "Welcome to CKAN" and "Search Your Data"
+   boxes. */
+.hero .box {
+    border: none;
+}
+/* Change the colors of the "Search Your Data" box. */
+.homepage .module-search .module-content {
+    color: rgb(68, 68, 68);
+    background-color: white;
+}
+/* Change the background color of the "Popular Tags" box. */
+.homepage .module-search .tags {
+    background-color: rgb(61, 61, 61);
+}
+/* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
+   and "Search Your Data" boxes line up. */
+.module-content:last-child {
+    padding-bottom: 0px;
+}
+.homepage .module-search {
+    padding: 0px;
+}
+/* Add a border line between the top and bottom halves of the front page. */
+.homepage [role="main"] {
+    border-top: 1px solid rgb(204, 204, 204);
+    background-color: #fff;
+}
+
+
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+
+.site-footer,
+body {
+    background-color: #2F176C;
+    font-family: 'Mulish', sans-serif;
+}
+/* The text in the footer. */
+.site-footer,
+.site-footer label,
+.site-footer small {
+    color: rgba(255, 255, 255, 0.6);
+}
+/* The link texts in the footer. */
+.site-footer a {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-info-area h5 {
+    color: #F7734F;
+    font-weight: 600;
+    margin: 20 0 10px 0;
+    font-size: 1.3em;
+}
+.footer-info-area > ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+.footer-info-area a {
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+
+
+.btn-primary {
+    background-color: #2B1466;
+    border-color: #2F176C;
+}
+.btn-primary:hover {
+    background-color: #2F176C;
+    border-color: #2F176C;
+}
+
+
+.wrapper {
+    padding-bottom: 30px;
+}
+
+
+/* Global */
+a {
+    color: #2B1466;
+}
+input {
+    border-color: $primary-color;
+}
+img.divider {
+    width: 80px;
+    display: block;
+    margin: 80px auto;
+}
+
+
+
+
+
+/* Homepage */
+.dataspace-homepage {
+    color: $primary-color;
+    background-color: #fff;
+    padding: 80px 0px;
+    h1 {
+        font-size: 5em;
+        text-align: center;
+    }
+    p {
+        font-size: 1.7em;
+    }
+    .hero {
+        background: none;
+        width: 80%;
+        margin: 0px auto;
+        form {
+            margin-top: 30px;
+        }
+        img {
+            width: 90%;
+            display: block;
+            margin: 0px auto;
+        }
+        h3 {
+            text-align: center;
+            font-size: 1.7em;
+            font-weight: 300;
+            color: #2B1466;
+            line-height: 1.8em;
+        }
+    }
+    .cat-grid {
+        .shadow-box {
+            width: 90px;
+            height: 90px;
+            display: block;
+            padding: 18px;
+            box-shadow: 0px 4px 5px #33333333;
+            border-radius: 4px;
+            margin: 0px auto;
+            transition: all .1s ease-in-out;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .shadow-box:hover {
+            transform: scale(1.1);
+        }
+        h4 {
+            text-align: center;
+            font-weight: 200;
+            font-size: 1.3em;
+            margin-top: 20px;
+            color: $primary-color;
+        }
+        .row {
+            margin: 60px 0px;
+        }
+        a:hover {
+            color: $primary-color;
+        }
+    }
+    .explore {
+        height: 500px;
+        .full-height {
+            height: 100%;
+        }
+        .explore-1 {
+            background-color: $primary-color;
+        }
+        .explore-2 {
+            background-color: $tertiary-color;
+        }
+        .explore-3 {
+            background-color: $secondary-color;
+        }
+        .explore-row-first {
+            padding-bottom: 18px;
+            height: 40%;
+        }
+        .explore-row-second {
+            height: 60%;
+        }
+        .col-md-12 {
+            padding-left: 0;
+        }
+        h1 {
+            color: #fff;
+            font-size: 6em;
+            text-align: left;
+            margin: 0;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 1.4em;
+        }
+        h2 {
+            color: #fff;
+            font-size: 4.4em;
+            margin: 0;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-right: 70px;
+            line-height: 1.4em;
+        }
+        .color-black {
+            color: $dark-grey-color;
+        }
+        @media (max-width: 1000px) {
+            h1 {
+                font-size: 4em;
+            }
+            h2 {
+                font-size: 3em;
+            }
+        }
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.8em;
+                padding-right: 40px;
+            }
+        }
+    }
+    @media (max-width: 700px) {
+        .explore {
+            height: 300px;
+        }
+    }
+    @media (max-width: 500px) {
+        .explore {
+            height: 250px;
+            h1, h2 {
+                padding-top: 5px;
+                padding-left: 15px;
+                padding-right: 50px;
+            }
+        }
+    }
+    .building-blocks {
+        .intro {
+            text-align: right;
+            h1 {
+                text-align: right;
+            }
+        }
+        .components-list {
+            text-align: center;
+            color: $tertiary-color;
+            font-size: 1.2em;
+            padding: 0px 30px;
+            margin-top: 20px;
+            .row {
+                margin-top: 20px;
+            }
+            .shadow-box {
+                box-shadow: 0px 4px 5px #33333333;
+                padding: 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .use-cases {
+        .carousel-control.left, .carousel-control.right {
+            background-image: none;
+        }
+        .use-case-container {
+            padding: 0px 180px;
+            min-height: 200px;
+            h3 {
+                font-size: 2em;
+                text-align: center;
+            }
+        }
+        .use-case-card {
+            background-color: #eee;
+        }
+    }
+}
+.homepage-header {
+    color: #fff;
+    background-color: #fff;
+    .nav {
+        li {
+            // a {
+            //     color: #fff;
+            // }
+            a:hover, a:focus {
+                background: none;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.homepage .module-search .search-giant input {
+    border-color: $primary-color;
+    border-width: 0.5px;
+    font-size: 2em;
+    padding: 20px 30px;
+}
+.ds-icon {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+.ds-icon-left {
+    background-image: url('left.svg');
+}
+.ds-icon-right {
+    background-image: url('left.svg');
+    transform: rotate(180deg);
+}
