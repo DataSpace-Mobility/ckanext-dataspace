@@ -107,12 +107,12 @@ body {
 .site-footer,
 .site-footer label,
 .site-footer small {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 /* The link texts in the footer. */
 .site-footer a {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 .footer-info-area h5 {
@@ -133,6 +133,14 @@ body {
   color: #fff;
   font-weight: 200;
   font-size: 1.2em;
+}
+
+.footer-message {
+  margin-top: 30px;
+  font-weight: 100;
+}
+.footer-message .heart-color {
+  color: #d43c67;
 }
 
 .btn-primary {
@@ -162,6 +170,34 @@ img.divider {
   width: 80px;
   display: block;
   margin: 80px auto;
+}
+
+a.tag:hover {
+  background-color: #2E1165;
+  border: 1px solid #2E1165;
+  -webkit-box-shadow: inset 0 1px 0 #42278E;
+  box-shadow: inset 0 1px 0 #42278E;
+}
+
+.btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
+  background-color: #42278E;
+  border-color: #2E1165;
+}
+
+::-webkit-input-placeholder {
+  color: red;
+}
+
+::-moz-placeholder {
+  color: red;
+}
+
+::-ms-placeholder {
+  color: red;
+}
+
+::placeholder {
+  color: red;
 }
 
 /* Homepage */
@@ -347,6 +383,11 @@ img.divider {
 .dataspace-homepage .use-cases .use-case-card {
   background-color: #eee;
 }
+.dataspace-homepage .supported-by img {
+  width: 60%;
+  display: block;
+  margin: 0px auto;
+}
 
 .homepage-header {
   color: #fff;
@@ -361,7 +402,17 @@ img.divider {
   border-color: #2E1165;
   border-width: 0.5px;
   font-size: 2em;
+  color: #2E1165;
   padding: 20px 30px;
+}
+
+.search-form .search-input.search-giant button {
+  height: 50%;
+  margin-top: -20px;
+}
+
+.search-form .search-input button:hover i {
+  color: #2E1165;
 }
 
 .ds-icon {

@@ -111,11 +111,11 @@ body {
 .site-footer,
 .site-footer label,
 .site-footer small {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255);
 }
 /* The link texts in the footer. */
 .site-footer a {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255);
 }
 .footer-info-area h5 {
     color: #F7734F;
@@ -133,6 +133,13 @@ body {
     color: #fff;
     font-weight: 200;
     font-size: 1.2em;
+}
+.footer-message {
+    margin-top: 30px;
+    font-weight: 100;
+    .heart-color {
+        color: #d43c67;
+    }
 }
 
 
@@ -163,6 +170,31 @@ img.divider {
     width: 80px;
     display: block;
     margin: 80px auto;
+}
+a.tag:hover {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    -webkit-box-shadow: inset 0 1px 0 $primary-light-color;
+    box-shadow: inset 0 1px 0 $primary-light-color;
+}
+.btn-primary:active:hover, .btn-primary.active:hover, .open>.dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open>.dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open>.dropdown-toggle.btn-primary.focus {
+    background-color: $primary-light-color;
+    border-color: $primary-color;
+}
+::-webkit-input-placeholder {
+    color:red;
+}
+
+::-moz-placeholder {
+    color:red;
+}
+
+::-ms-placeholder {
+    color:red;
+}
+
+::placeholder {
+    color:red;
 }
 
 
@@ -357,6 +389,13 @@ img.divider {
             background-color: #eee;
         }
     }
+    .supported-by {
+        img {
+            width: 60%;
+            display: block;
+            margin: 0px auto;
+        }
+    }
 }
 .homepage-header {
     color: #fff;
@@ -377,7 +416,15 @@ img.divider {
     border-color: $primary-color;
     border-width: 0.5px;
     font-size: 2em;
+    color: $primary-color;
     padding: 20px 30px;
+}
+.search-form .search-input.search-giant button {
+    height: 50%;
+    margin-top: -20px;
+}
+.search-form .search-input button:hover i {
+    color: $primary-color;
 }
 .ds-icon {
     position: absolute;
