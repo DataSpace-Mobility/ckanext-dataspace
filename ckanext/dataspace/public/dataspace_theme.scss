@@ -359,7 +359,7 @@ a.tag:hover {
         }
         .components-list {
             text-align: center;
-            color: $tertiary-color;
+            color: $primary-color;
             font-size: 1.2em;
             padding: 0px 30px;
             margin-top: 20px;
@@ -367,9 +367,17 @@ a.tag:hover {
                 margin-top: 20px;
             }
             .shadow-box {
+                height: 90px;
                 box-shadow: 0px 4px 5px #33333333;
                 padding: 20px;
                 border-radius: 5px;
+                display: flex;
+                align-items: center;
+                p {
+                    font-size: 1.1em;
+                    margin: 0;
+                    width: 100%;
+                }
             }
         }
     }
@@ -377,16 +385,77 @@ a.tag:hover {
         .carousel-control.left, .carousel-control.right {
             background-image: none;
         }
+        .carousel {
+            margin-top: 40px;
+        }
         .use-case-container {
             padding: 0px 180px;
             min-height: 200px;
             h3 {
                 font-size: 2em;
                 text-align: center;
+                color: $tertiary-color;
             }
+            
         }
         .use-case-card {
             background-color: #eee;
+        }
+        .ds-icon-head {
+            text-align: center;
+            img {
+                height: 60px;
+            }
+            .img-container {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                margin: 0px auto;
+            }
+            .img-traffic {
+                background-image: url('/possible_traffic.jpg');
+                background-size: contain;
+            }
+            .img-multimodal {
+                background-image: url('/possible_multimodal.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-safer {
+                background-image: url('/possible_safer.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-ev {
+                background-image: url('/possible_ev.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-crowd {
+                background-image: url('/possible_crowd.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-parking {
+                background-image: url('/possible_parking.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-deliver {
+                background-image: url('/possible_deliver.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-detour {
+                background-image: url('/possible_detour.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .img-pwd {
+                background-image: url('/possible_pwd.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
     }
     .supported-by {
@@ -394,6 +463,10 @@ a.tag:hover {
             width: 60%;
             display: block;
             margin: 0px auto;
+        }
+        p {
+            line-height: 1.6em;
+            text-align: center;
         }
     }
 }

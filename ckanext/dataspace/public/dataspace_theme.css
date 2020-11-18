@@ -356,7 +356,7 @@ a.tag:hover {
 }
 .dataspace-homepage .building-blocks .components-list {
   text-align: center;
-  color: #F7734F;
+  color: #2E1165;
   font-size: 1.2em;
   padding: 0px 30px;
   margin-top: 20px;
@@ -365,12 +365,23 @@ a.tag:hover {
   margin-top: 20px;
 }
 .dataspace-homepage .building-blocks .components-list .shadow-box {
+  height: 90px;
   box-shadow: 0px 4px 5px #33333333;
   padding: 20px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.dataspace-homepage .building-blocks .components-list .shadow-box p {
+  font-size: 1.1em;
+  margin: 0;
+  width: 100%;
 }
 .dataspace-homepage .use-cases .carousel-control.left, .dataspace-homepage .use-cases .carousel-control.right {
   background-image: none;
+}
+.dataspace-homepage .use-cases .carousel {
+  margin-top: 40px;
 }
 .dataspace-homepage .use-cases .use-case-container {
   padding: 0px 180px;
@@ -379,14 +390,75 @@ a.tag:hover {
 .dataspace-homepage .use-cases .use-case-container h3 {
   font-size: 2em;
   text-align: center;
+  color: #F7734F;
 }
 .dataspace-homepage .use-cases .use-case-card {
   background-color: #eee;
+}
+.dataspace-homepage .use-cases .ds-icon-head {
+  text-align: center;
+}
+.dataspace-homepage .use-cases .ds-icon-head img {
+  height: 60px;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0px auto;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-traffic {
+  background-image: url("/possible_traffic.jpg");
+  background-size: contain;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-multimodal {
+  background-image: url("/possible_multimodal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-safer {
+  background-image: url("/possible_safer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-ev {
+  background-image: url("/possible_ev.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-crowd {
+  background-image: url("/possible_crowd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-parking {
+  background-image: url("/possible_parking.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-deliver {
+  background-image: url("/possible_deliver.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-detour {
+  background-image: url("/possible_detour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dataspace-homepage .use-cases .ds-icon-head .img-pwd {
+  background-image: url("/possible_pwd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .dataspace-homepage .supported-by img {
   width: 60%;
   display: block;
   margin: 0px auto;
+}
+.dataspace-homepage .supported-by p {
+  line-height: 1.6em;
+  text-align: center;
 }
 
 .homepage-header {
