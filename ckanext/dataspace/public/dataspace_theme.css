@@ -6,8 +6,8 @@
 }
 
 /* The "bubble" containing the number of new notifications. */
-.account-masthead .account .notifications a span {
-  background-color: black;
+.account-masthead .account .notifications a span.badge {
+  background-color: #2E1165;
 }
 
 /* The text and icons in the user account info. */
@@ -19,7 +19,7 @@
    over them. */
 .account-masthead .account ul li a:hover {
   color: rgba(255, 255, 255, 0.7);
-  background-color: black;
+  background-color: #42278E;
 }
 
 /* ========================================================================
@@ -148,7 +148,7 @@ body {
   border-color: #2F176C;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
   background-color: #2F176C;
   border-color: #2F176C;
 }
@@ -198,6 +198,10 @@ a.tag:hover {
 
 ::placeholder {
   color: red;
+}
+
+.pill {
+  background-color: #F7734F;
 }
 
 /* Homepage */
