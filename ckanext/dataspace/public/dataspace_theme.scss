@@ -185,6 +185,10 @@ a.tag:hover {
     background-color: $primary-light-color;
     border-color: $primary-color;
 }
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
+    background-color: $primary-second-shade-color;
+    border-color: $primary-second-shade-color;
+}
 .editor .editor-info-block a {
     color: $primary-light-color;
 }
