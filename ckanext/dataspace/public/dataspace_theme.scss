@@ -181,6 +181,13 @@ a.tag:hover {
     background-color: $primary-light-color;
     border-color: $primary-color;
 }
+.btn-primary:focus, .btn-primary.focus {
+    background-color: $primary-light-color;
+    border-color: $primary-color;
+}
+.editor .editor-info-block a {
+    color: $primary-light-color;
+}
 ::-webkit-input-placeholder {
     color:red;
 }
@@ -198,6 +205,10 @@ a.tag:hover {
 }
 .pill {
     background-color: $tertiary-color;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    background-color: $primary-color;
+    border-color: $primary-color;
 }
 
 

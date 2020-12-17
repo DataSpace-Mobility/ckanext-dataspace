@@ -184,6 +184,15 @@ a.tag:hover {
   border-color: #2E1165;
 }
 
+.btn-primary:focus, .btn-primary.focus {
+  background-color: #42278E;
+  border-color: #2E1165;
+}
+
+.editor .editor-info-block a {
+  color: #42278E;
+}
+
 ::-webkit-input-placeholder {
   color: red;
 }
@@ -202,6 +211,11 @@ a.tag:hover {
 
 .pill {
   background-color: #F7734F;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #2E1165;
+  border-color: #2E1165;
 }
 
 /* Homepage */
