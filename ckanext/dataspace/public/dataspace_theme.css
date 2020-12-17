@@ -218,6 +218,23 @@ a.tag:hover {
   border-color: #2E1165;
 }
 
+a:hover, a:focus {
+  color: #555555;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #2E1165;
+}
+
+@media (min-width: 768px) {
+  .nav-item.active > a:before, .nav-aside li.active a:before {
+    border-left-color: #1C1C1C;
+  }
+
+  .nav-item.active > a, .nav-aside li.active a {
+    background-color: #1C1C1C;
+  }
+}
 /* Homepage */
 .dataspace-homepage {
   color: #2E1165;

@@ -210,6 +210,20 @@ a.tag:hover {
     background-color: $primary-color;
     border-color: $primary-color;
 }
+a:hover, a:focus {
+    color: #555555;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus { 
+    color: $primary-color;
+}
+@media (min-width: 768px) {
+    .nav-item.active>a:before, .nav-aside li.active a:before {
+        border-left-color: $dark-grey-color
+    }
+    .nav-item.active>a, .nav-aside li.active a {
+        background-color: $dark-grey-color
+    }
+}
 
 
 
